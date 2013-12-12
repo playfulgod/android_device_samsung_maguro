@@ -5,8 +5,9 @@ PRODUCT_RELEASE_NAME := GN-GSM
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CM stuff.
+# Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Enhanced NFC
 #$(call inherit-product, vendor/omni/config/nfc_enhanced.mk)
